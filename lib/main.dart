@@ -4,16 +4,17 @@ import 'homepage.dart';
 
 void main()
 {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
     );
    }
-}
+} 
